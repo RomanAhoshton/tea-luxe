@@ -3,25 +3,25 @@ import { menuLinks } from "../../constants";
 import Bag from "../../icons/Bag";
 import User from "../../icons/User";
 import Search from "../../icons/Search";
+import MobileMenu from "../MobileMenu";
 import Logo from "../Logo";
 import { useWidth } from "../../hooks/useWidth";
 import Burger from "../Burger/Burger";
-
+import { useState } from "react";
 
 const Header = () => {
   const { width } = useWidth();
-  console.log(width, "width");
+  const [open, setOpen] = useState<boolean>(false);
+
 
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <div className={styles.headerContainer}>
-      {
-            width<769 ?<Burger/>:null
-          }
-      
-         
-          <Logo />
-         
+        {width < 785 ? <Burger open={open} setOpen={setOpen} /> : null}
+
+        <Logo />
+
+        {width > 785 ? (
           <nav className={styles.menu}>
             <ul className={styles.menuLinks}>
               {menuLinks.map((item, index) => (
@@ -31,7 +31,9 @@ const Header = () => {
               ))}
             </ul>
           </nav>
-    
+        ) : width < 785 && open ? (
+          <MobileMenu open={open} setOpen={setOpen} />
+        ) : null}
 
         <div className={styles.actions}>
           <button>
@@ -47,7 +49,7 @@ const Header = () => {
           </button>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

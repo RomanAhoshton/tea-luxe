@@ -1,15 +1,17 @@
+import { BurgerIcon } from "../../constants";
+import styles from "./index.module.scss";
 
-import { BurgerIcon } from '../../constants'
-import styles from './index.module.scss'
-
-
-const Burger=()=> {
-  return (
-    <button className={styles.button}>
-        <img src={BurgerIcon} alt='BurgerIcon'/>
-    </button>
-
-  )
+interface Props {
+  open: boolean;
+  setOpen: (arg: boolean) => void;
 }
 
-export default Burger
+const Burger = ({ open, setOpen }: Props) => {
+  return (
+    <button className={styles.button} onClick={() => setOpen(!open)}>
+      <img src={BurgerIcon} alt="BurgerIcon" />
+    </button>
+  );
+};
+
+export default Burger;
