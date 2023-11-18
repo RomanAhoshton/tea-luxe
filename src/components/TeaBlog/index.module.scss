@@ -1,0 +1,115 @@
+.teaBlog {
+  margin-top: 150px;
+  color: #151618;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 300px;
+  @media (max-width: 1000px) {
+    margin-top: 120px;
+  }
+  @media (max-width: 480px) {
+    margin-top: 60px;
+  }
+  @media (max-width: 375px) {
+    margin-top: 50px;
+  }
+
+  .blogContainer {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .blogTitle {
+      font-family: Cormorant;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 60px;
+      text-align: center;
+    }
+
+    .blog {
+      display: flex;
+      flex-wrap: wrap;
+    
+      justify-content: space-between;
+      margin-bottom: 60px;
+      align-items: center;
+      @media (max-width:950px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        
+      }
+
+     
+
+      .blogItem {
+        display: flex;
+        margin-bottom: 40px;
+        @media (max-width: 480px) {
+          flex-direction: column;
+        }
+
+        img {
+          margin-right: 20px;
+          width: 230px;
+          height: 153px;
+          flex-shrink: 0;
+          @media (max-width: 480px) {
+            margin-right: 0px;
+          }
+        }
+
+        .textBlock {
+          display: flex;
+          flex-direction: column;
+          width: 210px;
+          height: 86px;
+          flex-shrink: 0;
+          @media (max-width: 480px) {
+            margin-top: 10px;
+            margin-bottom: 30px;
+          }
+
+          p {
+            font-family: Cormorant;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 10px;
+          }
+
+          span {
+            font-family: Open Sans;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+      
+          }
+
+          .read {
+            display: flex;
+            align-items:center;
+            margin-top: 20px;
+
+            span {
+              font-family: Open Sans;
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: normal;
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
