@@ -24,11 +24,8 @@
       line-height: normal;
       text-align: center;
       margin: 0px;
-      align-self:center;
-    
+      align-self: center;
 
-
-     
       @media (max-width: 480px) {
         font-family: Open Sans;
         font-size: 16px;
@@ -41,7 +38,7 @@
       margin-top: 150px;
       display: flex;
       flex-direction: column;
-      align-items:center;
+      align-items: center;
       justify-content: center;
       @media (max-width: 1000px) {
         margin-top: 135px;
@@ -58,25 +55,31 @@
         line-height: normal;
         margin-bottom: 60px;
 
-        @media (max-width:480px) {
-            font-size: 24px;
-            margin-bottom: 30px;
-            
+        @media (max-width: 480px) {
+          font-size: 24px;
+          margin-bottom: 30px;
         }
       }
 
-      .teaItems{
+      .teaItems {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
-   
 
-        .teaItem{
-            display: flex;
-            flex-direction: column;
-            align-items:center;
-            justify-content: center;
+        .teaItem {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-family: Cormorant;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
         }
       }
     }

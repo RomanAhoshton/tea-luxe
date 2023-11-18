@@ -48,3 +48,23 @@ export const teaCollection = [
     title: "Pu-erh",
   },
 ];
+
+
+export const Clients=[
+  {
+    text:`${"As a tea enthusiast, I have tried teas from all over the world, but this tea store truly stands out. Their teas are of the highest quality and the variety is impressive. This is definitely a tea store that every tea lover should visit."}`,
+    name:"Alice",
+  },
+  {
+    text:`${"This tea store is my go-to for all my tea needs. Their selection is unbeatable and the quality of their teas is exceptional."}`,
+    name:"Mad-Hatter",
+  },
+  {
+    text:`${"If you're a tea lover, you must visit this tea store. The selection is vast and the quality is outstanding. I guarantee you won't be disappointed."}`,
+    name:"Dormouse",
+  },
+  {
+    text:`${"I am not a big tea drinker, but this tea store has converted me. I highly recommend this tea store to anyone looking for a high-quality tea experience."}`,
+    name:"March Hare",
+  }
+]

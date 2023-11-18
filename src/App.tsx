@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import "./App.scss";
 import MainBanner from "./components/MainBanner";
 import ExploreCollection from "./components/ExploreCollection";
+import ClientSay from "./components/ClientSay";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <MainBanner/>
       <ExploreCollection/>
+      <ClientSay/>
     </div>
   );
 }
