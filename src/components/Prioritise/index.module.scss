@@ -1,0 +1,102 @@
+.prioritise {
+  margin-top: 150px;
+  color: #151618;
+  margin-bottom: 150px;
+
+  @media (max-width: 1000px) {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  @media (max-width: 480px) {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  @media (max-width: 375px) {
+    margin-top: 50px;
+  }
+  .prioritiseContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .prioritiseTitle {
+      text-align: center;
+      font-family: Cormorant;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      @media (max-width: 375px) {
+        font-size: 24px;
+      }
+    }
+
+    .prioritiseItems {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+      }
+      @media (max-width: 480px) {
+        margin-top: 30px;
+      }
+
+      .prioritiseItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        &:last-child {
+          margin-right: 0px;
+        }
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+          align-items: center;
+          margin-right: 0px;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-family: Open Sans;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          margin-bottom: 10px;
+          @media (max-width: 375px) {
+            font-size: 20px;
+          }
+        }
+
+        span {
+          font-family: Open Sans;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          margin-bottom: 40px;
+
+          @media (max-width: 375px) {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+          }
+        }
+
+        img {
+          width: 60px;
+          height: 60px;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+}

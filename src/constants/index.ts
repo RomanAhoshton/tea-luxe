@@ -10,10 +10,15 @@ import TeaBlog1 from "../images/TeaBlog1.png";
 import TeaBlog2 from "../images/TeaBlog2.png";
 import TeaBlog3 from "../images/TeaBlog3.png";
 import TeaBlog4 from "../images/TeaBlog4.png";
+import prioritise1 from "../images/prioritise1.svg";
+import prioritise2 from "../images/prioritise2.svg";
+import prioritise3 from "../images/prioritise3.svg";
+import prioritise4 from "../images/prioritise4.svg";
 
 export const headerLogo = Logo;
 export const BurgerIcon = Burger;
 export const MainImage = Banner;
+// export const JoinImage= JoinBg;
 
 export const menuLinks = [
   { link: "Black", href: "#" },
@@ -96,4 +101,45 @@ export const teaBlog = [
     author: "by Author Authorius",
     read: "Read",
   },
+];
+
+export const prioritise = [
+  {
+    title: "Single garden teas",
+    subtitle: "Complete transparency",
+    icon: prioritise1,
+  },
+  {
+    title: "Only Loose leaf tea",
+    subtitle: "Best Drinking Experience",
+    icon: prioritise2,
+  },
+  {
+    title: "Customer support",
+    subtitle: "No bots, no automated replies",
+    icon: prioritise3,
+  },
+  {
+    title: "Fast shipping",
+    subtitle: "Save, Convenient, Reliable",
+    icon: prioritise4,
+  },
+];
+
+export const products = [
+  { product: "Black tea", href: "#" },
+  { product: "Green tea", href: "#" },
+  { product: "White tea", href: "#" },
+  { product: "Oolong tea", href: "#" },
+  { product: "Pu-erh tea", href: "#" },
+];
+
+export const company = [
+  { link: "About Us", href: "#" },
+  { link: "Contact Us", href: "#" },
+  { link: "Our Blog", href: "#" },
+  { link: "FAQ", href: "#" },
+  { link: "Shipping & Delivery", href: "#" },
+  { link: "Refund policy", href: "#" },
+  { link: "Terms of Service", href: "#" },
 ];

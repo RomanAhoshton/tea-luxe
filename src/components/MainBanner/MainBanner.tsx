@@ -1,8 +1,7 @@
 import React from "react";
-// import { MainImage } from "../../constants";
 import styles from "./index.module.scss";
 import { motion } from "framer-motion";
-import { isVisible } from "@testing-library/user-event/dist/utils";
+
 
 const MainBanner = () => {
   return (

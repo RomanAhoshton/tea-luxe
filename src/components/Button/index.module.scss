@@ -16,4 +16,9 @@
   &:hover {
     scale: 1.1;
   }
+
+  @media (max-width:400px) {
+    padding: 12px 30px;
+    
+  }
 }

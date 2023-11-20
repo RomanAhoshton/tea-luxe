@@ -5,15 +5,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 300px;
+  margin-bottom: 150px;
   @media (max-width: 1000px) {
     margin-top: 120px;
+    margin-bottom: 120px;
   }
   @media (max-width: 480px) {
     margin-top: 60px;
+    margin-bottom: 60px;
   }
   @media (max-width: 375px) {
     margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .blogContainer {
@@ -30,6 +33,11 @@
       line-height: normal;
       margin-bottom: 60px;
       text-align: center;
+      @media (max-width:375px) {
+        margin-bottom: 30px;
+        font-size: 24px;
+        
+      }
     }
 
     .blog {
@@ -45,9 +53,6 @@
         align-items:center;
         
       }
-
-     
-
       .blogItem {
         display: flex;
         margin-bottom: 40px;
