@@ -23,13 +23,13 @@ const Header = () => {
 
         {width > 785 ? (
           <nav className={styles.menu}>
-            <ul className={styles.menuLinks}>
+            <div className={styles.menuLinks}>
               {menuLinks.map((item, index) => (
-                <li key={index}>
-                  <a href={item.href}>{item.link}</a>
-                </li>
+     
+                <button> {item.link}</button>
+       
               ))}
-            </ul>
+            </div>
           </nav>
         ) : width < 785 && open ? (
           <MobileMenu open={open} setOpen={setOpen} />

@@ -4,6 +4,7 @@ import Button from "../Button";
 import { teaBlog } from "../../constants";
 import { useAnimations } from "../../hooks/useAnimations";
 import { motion } from "framer-motion";
+import More from "../../icons/More";
 
 const TeaBlog = () => {
   const { controls, ref } = useAnimations();
@@ -35,6 +36,7 @@ const TeaBlog = () => {
                 <span>{item.author}</span>
                 <div className={styles.read}>
                   <span>{item.read}</span>
+                  <More/>
                 </div>
               </div>
             </div>
