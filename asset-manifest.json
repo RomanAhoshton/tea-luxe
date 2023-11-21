@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tea-luxe/static/css/main.d9b229e0.css",
-    "main.js": "/tea-luxe/static/js/main.c891454f.js",
+    "main.css": "/tea-luxe/static/css/main.da1c6d51.css",
+    "main.js": "/tea-luxe/static/js/main.70db018b.js",
     "static/js/787.379fadcc.chunk.js": "/tea-luxe/static/js/787.379fadcc.chunk.js",
     "static/media/Banner.jpeg": "/tea-luxe/static/media/Banner.2d6281074576744c5dc0.jpeg",
     "static/media/JoinBg.png": "/tea-luxe/static/media/JoinBg.45573418aace08d7fd7b.png",
@@ -20,12 +20,12 @@
     "static/media/prioritise3.svg": "/tea-luxe/static/media/prioritise3.a0371ae352c04f09752a00dbeb72a138.svg",
     "static/media/prioritise4.svg": "/tea-luxe/static/media/prioritise4.a2fae4aa92869b3595b16abff57d4138.svg",
     "index.html": "/tea-luxe/index.html",
-    "main.d9b229e0.css.map": "/tea-luxe/static/css/main.d9b229e0.css.map",
-    "main.c891454f.js.map": "/tea-luxe/static/js/main.c891454f.js.map",
+    "main.da1c6d51.css.map": "/tea-luxe/static/css/main.da1c6d51.css.map",
+    "main.70db018b.js.map": "/tea-luxe/static/js/main.70db018b.js.map",
     "787.379fadcc.chunk.js.map": "/tea-luxe/static/js/787.379fadcc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9b229e0.css",
-    "static/js/main.c891454f.js"
+    "static/css/main.da1c6d51.css",
+    "static/js/main.70db018b.js"
   ]
 }
