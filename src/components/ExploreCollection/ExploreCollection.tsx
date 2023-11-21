@@ -1,28 +1,24 @@
 import styles from "./index.module.scss";
 import { teaCollection } from "../../constants";
 import { motion } from "framer-motion";
-import { useAnimate } from "../../hooks/useAnimate";
+import { useAnimations } from "../../hooks/useAnimations";
 
 const ExploreCollection = () => {
-  const { controls } = useAnimate();
+  const { controls, ref } = useAnimations();
   return (
     <section className={styles.explore}>
       <div className={styles.exploreContainer}>
-        <motion.p
-          className={styles.exploreTopText}
-          initial={{ opacity: 0, x: -700 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-        >
+        <p className={styles.exploreTopText}>
           "Tea is not just a drink, it's a way of life and a <br /> way to
           connect with our loved ones."
-        </motion.p>
+        </p>
         <div className={styles.teaCollections}>
           <motion.p
             className={styles.teaTitle}
             initial={{ opacity: 0, y: -20 }}
             animate={controls}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.5}}
+            ref={ref}
           >
             Explore our Collections
           </motion.p>
@@ -31,6 +27,7 @@ const ExploreCollection = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={controls}
             transition={{ duration: 1 }}
+            ref={ref}
           >
             {teaCollection.map((item) => (
               <div className={styles.teaItem}>
