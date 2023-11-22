@@ -10,15 +10,15 @@ import TeaBlog1 from "../images/TeaBlog1.png";
 import TeaBlog2 from "../images/TeaBlog2.png";
 import TeaBlog3 from "../images/TeaBlog3.png";
 import TeaBlog4 from "../images/TeaBlog4.png";
-import prioritise1 from "../images/prioritise1.svg";
-import prioritise2 from "../images/prioritise2.svg";
-import prioritise3 from "../images/prioritise3.svg";
-import prioritise4 from "../images/prioritise4.svg";
+import prioritise1 from "../images/preoritise1.png";
+import prioritise2 from "../images/preoritise2.png";
+import prioritise3 from "../images/preoritise3.png";
+import prioritise4 from "../images/preoritise4.png";
 
 export const headerLogo = Logo;
 export const BurgerIcon = Burger;
 export const MainImage = Banner;
-// export const JoinImage= JoinBg;
+
 
 export const menuLinks = [
   { link: "Black", href: "#" },
@@ -81,25 +81,21 @@ export const teaBlog = [
     image: TeaBlog1,
     text: "Tea Time Travels: Funny Moments from Around the World",
     author: "by Robinson Crusoe",
-    read: "Read",
   },
   {
     image: TeaBlog2,
     text: "Tea-rific Tales: Hilarious Stories from Tea Lovers",
     author: "by Casper the Friendly Ghost",
-    read: "Read",
   },
   {
     image: TeaBlog3,
     text: "The Role of Tea in Mental Health",
     author: "by Joker",
-    read: "Read",
   },
   {
     image: TeaBlog4,
     text: "Tea and Caffeine: Effects on the Brain and Behavior",
     author: "by Author Authorius",
-    read: "Read",
   },
 ];
 

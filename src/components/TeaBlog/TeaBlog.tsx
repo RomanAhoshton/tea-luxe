@@ -30,14 +30,12 @@ const TeaBlog = () => {
         >
           {teaBlog.map((item, index) => (
             <div className={styles.blogItem} key={index}>
-              <img src={item.image} alt="BlogImage" />
+              <div className={styles.imageContainer}>
+                <img src={item.image} alt="BlogImage" />
+              </div>
               <div className={styles.textBlock}>
-                <p>{item.text}</p>
-                <span>{item.author}</span>
-                <div className={styles.read}>
-                  <span>{item.read}</span>
-                  <More/>
-                </div>
+                <p className={styles.text}>{item.text}</p>
+                <p className={styles.author}>{item.author}</p>
               </div>
             </div>
           ))}

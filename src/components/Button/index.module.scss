@@ -1,8 +1,9 @@
 .button {
   background-color: #fff;
-  display: inline-flex;
+  display: flex;
   padding: 12px 41px;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   font-family: Open Sans;
   font-size: 20px;
@@ -17,8 +18,11 @@
     scale: 1.1;
   }
 
-  @media (max-width:400px) {
-    padding: 12px 30px;
+  @media (max-width: 480px) {
+    max-width: 120px;
+    min-width: 90px;
+    height: 61px;
+    padding: 0;
     
   }
 }

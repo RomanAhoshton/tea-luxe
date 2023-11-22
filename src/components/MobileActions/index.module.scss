@@ -1,0 +1,18 @@
+.mobileActions {
+    width: 100%;
+    background-color: #f7f2ea;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    justify-content: center;
+   
+
+    a {
+      margin-right: 70px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+
+  }

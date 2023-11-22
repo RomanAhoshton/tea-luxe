@@ -2,9 +2,11 @@ import styles from "./index.module.scss";
 import { teaCollection } from "../../constants";
 import { motion } from "framer-motion";
 import { useAnimations } from "../../hooks/useAnimations";
+import { useWidth } from "../../hooks/useWidth";
 
 const ExploreCollection = () => {
   const { controls, ref } = useAnimations();
+  const {width}=useWidth()
   return (
     <section className={styles.explore}>
       <div className={styles.exploreContainer}>
@@ -26,7 +28,7 @@ const ExploreCollection = () => {
             className={styles.teaItems}
             initial={{ opacity: 0, y: -20 }}
             animate={controls}
-            transition={{ duration: 1 }}
+            transition={{ duration:  width<768?0.5:1 }}
             ref={ref}
           >
             {teaCollection.map((item) => (
