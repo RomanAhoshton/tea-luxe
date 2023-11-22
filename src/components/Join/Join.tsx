@@ -3,7 +3,6 @@ import styles from "./index.module.scss";
 import Button from "../Button";
 import { useOnInput } from "../../hooks/useOnInput";
 
-
 const Join = () => {
   const { inputRef, value, setValue, isFocused, setFocused } = useOnInput();
 
@@ -28,15 +27,18 @@ const Join = () => {
               >
                 Enter your email
               </label>
-              <input
-                type="text"
-                name="input"
-                id="input"
-                ref={inputRef}
-                value={value}
-                onChange={(e) => setValue(e.target.value)}
-                onFocus={(e) => setFocused(!isFocused)}
-              />
+
+              <div className={styles.borderInput}>
+                <input
+                  type="text"
+                  name="input"
+                  id="input"
+                  ref={inputRef}
+                  value={value}
+                  onChange={(e) => setValue(e.target.value)}
+                  onFocus={(e) => setFocused(!isFocused)}
+                />
+              </div>
               <Button text="join" />
             </div>
 
